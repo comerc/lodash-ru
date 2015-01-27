@@ -325,8 +325,8 @@ _.chunk(['a', 'b', 'c', 'd'], 3);
 
 ### `_.compact(array)`
 
-Creates an array with all falsey values removed. The values `false`, `null`,
-`0`, `""`, `undefined`, and `NaN` are falsey.
+Вернет копию массива `array`, в котором удалены все «ложные» значения. Такие как: `false`, `null`,
+`0`, `""`, `undefined`, и `NaN`.
 
 ```js
 _.compact([0, 1, false, 2, '', 3]);
