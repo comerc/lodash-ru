@@ -304,21 +304,12 @@
 
 <!-- div -->
 
-### <a id="_chunkarray-size1"></a>`_.chunk(array, [size=1])`
-<a href="#_chunkarray-size1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4096 "View in source") [&#x24C9;][1]
+### `_.chunk(array, [size=1])`
 
 Creates an array of elements split into groups the length of `size`.
 If `collection` can't be split evenly, the final chunk will be the remaining
 elements.
 
-#### Arguments
-1. `array` *(Array)*: The array to process.
-2. `[size=1]` *(numer)*: The length of each chunk.
-
-#### Returns
-*(Array)*:  Returns the new array containing chunks.
-
-#### Example
 ```js
 _.chunk(['a', 'b', 'c', 'd'], 2);
 // => [['a', 'b'], ['c', 'd']]
@@ -332,19 +323,11 @@ _.chunk(['a', 'b', 'c', 'd'], 3);
 
 <!-- div -->
 
-### <a id="_compactarray"></a>`_.compact(array)`
-<a href="#_compactarray">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4127 "View in source") [&#x24C9;][1]
+### `_.compact(array)`
 
 Creates an array with all falsey values removed. The values `false`, `null`,
 `0`, `""`, `undefined`, and `NaN` are falsey.
 
-#### Arguments
-1. `array` *(Array)*: The array to compact.
-
-#### Returns
-*(Array)*:  Returns the new array of filtered values.
-
-#### Example
 ```js
 _.compact([0, 1, false, 2, '', 3]);
 // => [1, 2, 3]
@@ -355,8 +338,7 @@ _.compact([0, 1, false, 2, '', 3]);
 
 <!-- div -->
 
-### <a id="_differencearray-values"></a>`_.difference(array, [values])`
-<a href="#_differencearray-values">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4162 "View in source") [&#x24C9;][1]
+### `_.difference(array, [values])`
 
 Creates an array excluding all values of the provided arrays using
 `SameValueZero` for equality comparisons.
@@ -367,14 +349,6 @@ e.g. `===`, except that `NaN` matches `NaN`. See the
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
 for more details.
 
-#### Arguments
-1. `array` *(Array)*: The array to inspect.
-2. `[values]` *(...Array)*: The arrays of values to exclude.
-
-#### Returns
-*(Array)*:  Returns the new array of filtered values.
-
-#### Example
 ```js
 _.difference([1, 2, 3], [5, 2, 10]);
 // => [1, 3]
@@ -402,24 +376,16 @@ _.drop([1, 2, 3], 5);
 _.drop([1, 2, 3], 0);
 // => [1, 2, 3]
 ```
+* * *
 
 <!-- /div -->
 
 <!-- div -->
 
-### <a id="_droprightarray-n1"></a>`_.dropRight(array, [n=1])`
-<a href="#_droprightarray-n1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4236 "View in source") [&#x24C9;][1]
+### `_.dropRight(array, [n=1])`
 
-Creates a slice of `array` with `n` elements dropped from the end.
+Вернет копию массива `array`, из которой будут удалены `n` конечных элементов.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[n=1]` *(number)*: The number of elements to drop.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.dropRight([1, 2, 3]);
 // => [1, 2]
