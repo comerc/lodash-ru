@@ -386,18 +386,10 @@ _.difference([1, 2, 3], [5, 2, 10]);
 <!-- div -->
 
 ### <a id="_droparray-n1"></a>`_.drop(array, [n=1])`
-<a href="#_droparray-n1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4200 "View in source") [&#x24C9;][1]
+<a href="#_droparray-n1">#</a>
 
-Creates a slice of `array` with `n` elements dropped from the beginning.
+Вернет копию массива `array`, из которой будут удалены `n` начальных элементов
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[n=1]` *(number)*: The number of elements to drop.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.drop([1, 2, 3]);
 // => [2, 3]
