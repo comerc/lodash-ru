@@ -1074,20 +1074,12 @@ _.uniq([{ 'x': 1 }, { 'x': 2 }, { 'x': 1 }], 'x');
 
 <!-- div -->
 
-### <a id="_unziparray"></a>`_.unzip(array)`
-<a href="#_unziparray">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5241 "View in source") [&#x24C9;][1]
+### `_.unzip(array)`
 
 This method is like `_.zip` except that it accepts an array of grouped
 elements and creates an array regrouping the elements to their pre-`_.zip`
 configuration.
 
-#### Arguments
-1. `array` *(Array)*: The array of grouped elements to process.
-
-#### Returns
-*(Array)*:  Returns the new array of regrouped elements.
-
-#### Example
 ```js
 var zipped = _.zip(['fred', 'barney'], [30, 40], [true, false]);
 // => [['fred', 30, true], ['barney', 40, false]]
@@ -1101,8 +1093,7 @@ _.unzip(zipped);
 
 <!-- div -->
 
-### <a id="_withoutarray-values"></a>`_.without(array, [values])`
-<a href="#_withoutarray-values">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5272 "View in source") [&#x24C9;][1]
+### `_.without(array, [values])`
 
 Creates an array excluding all provided values using `SameValueZero` for
 equality comparisons.
@@ -1113,14 +1104,6 @@ e.g. `===`, except that `NaN` matches `NaN`. See the
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
 for more details.
 
-#### Arguments
-1. `array` *(Array)*: The array to filter.
-2. `[values]` *(...&#42;)*: The values to exclude.
-
-#### Returns
-*(Array)*:  Returns the new array of filtered values.
-
-#### Example
 ```js
 _.without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 // => [2, 3, 4]
@@ -1131,20 +1114,12 @@ _.without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 
 <!-- div -->
 
-### <a id="_xorarrays"></a>`_.xor([arrays])`
-<a href="#_xorarrays">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5294 "View in source") [&#x24C9;][1]
+### `_.xor([arrays])`
 
 Creates an array that is the symmetric difference of the provided arrays.
 See [Wikipedia](https://en.wikipedia.org/wiki/Symmetric_difference) for
 more details.
 
-#### Arguments
-1. `[arrays]` *(...Array)*: The arrays to inspect.
-
-#### Returns
-*(Array)*:  Returns the new array of values.
-
-#### Example
 ```js
 _.xor([1, 2, 3], [5, 2, 1, 4]);
 // => [3, 5, 4]
@@ -1158,20 +1133,12 @@ _.xor([1, 2, 5], [2, 3, 5], [3, 4, 5]);
 
 <!-- div -->
 
-### <a id="_ziparrays"></a>`_.zip([arrays])`
-<a href="#_ziparrays">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5324 "View in source") [&#x24C9;][1]
+### `_.zip([arrays])`
 
 Creates an array of grouped elements, the first of which contains the first
 elements of the given arrays, the second of which contains the second elements
 of the given arrays, and so on.
 
-#### Arguments
-1. `[arrays]` *(...Array)*: The arrays to process.
-
-#### Returns
-*(Array)*:  Returns the new array of grouped elements.
-
-#### Example
 ```js
 _.zip(['fred', 'barney'], [30, 40], [true, false]);
 // => [['fred', 30, true], ['barney', 40, false]]
@@ -1182,21 +1149,12 @@ _.zip(['fred', 'barney'], [30, 40], [true, false]);
 
 <!-- div -->
 
-### <a id="_zipobjectprops-values"></a>`_.zipObject(props, [values=[]])`
-<a href="#_zipobjectprops-values">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5351 "View in source") [&#x24C9;][1]
+### `_.zipObject(props, [values=[]])`
 
 Creates an object composed from arrays of property names and values. Provide
 either a single two dimensional array, e.g. `[[key1, value1], [key2, value2]]`
 or two arrays, one of property names and one of corresponding values.
 
-#### Arguments
-1. `props` *(Array)*: The property names.
-2. `[values=[]]` *(Array)*: The property values.
-
-#### Returns
-*(Object)*:  Returns the new object.
-
-#### Example
 ```js
 _.zipObject(['fred', 'barney'], [30, 40]);
 // => { 'fred': 30, 'barney': 40 }
