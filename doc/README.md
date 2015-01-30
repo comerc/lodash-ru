@@ -405,7 +405,7 @@ _.dropRight([1, 2, 3], 0);
 
 <!-- div -->
 
-### <a id="_droprightwhilearray-predicate_identity-thisarg">`_.dropRightWhile(array, [predicate=_.identity], [thisArg])`</a>
+### `_.dropRightWhile(array, [predicate=_.identity], [thisArg])`
 
 Creates a slice of `array` excluding elements dropped from the end.
 Elements are dropped until `predicate` returns falsey. The predicate is
@@ -444,8 +444,7 @@ _.pluck(_.dropRightWhile(users, { 'status': 'away' }), 'user');
 
 <!-- div -->
 
-### <a id="_dropwhilearray-predicate_identity-thisarg"></a>`_.dropWhile(array, [predicate=_.identity], [thisArg])`
-<a href="#_dropwhilearray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4338 "View in source") [&#x24C9;][1]
+### `_.dropWhile(array, [predicate=_.identity], [thisArg])`
 
 Creates a slice of `array` excluding elements dropped from the beginning.
 Elements are dropped until `predicate` returns falsey. The predicate is
@@ -460,15 +459,6 @@ If an object is provided for `predicate` the created "_.matches" style
 callback returns `true` for elements that have the properties of the given
 object, else `false`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[predicate=_.identity]` *(Function|Object|string)*: The function invoked per element.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `predicate`.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.dropWhile([1, 2, 3], function(n) { return n < 3; });
 // => [3]
@@ -493,8 +483,7 @@ _.pluck(_.dropWhile(users, { 'status': 'busy' }), 'user');
 
 <!-- div -->
 
-### <a id="_findindexarray-predicate_identity-thisarg"></a>`_.findIndex(array, [predicate=_.identity], [thisArg])`
-<a href="#_findindexarray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4388 "View in source") [&#x24C9;][1]
+### `_.findIndex(array, [predicate=_.identity], [thisArg])`
 
 This method is like `_.find` except that it returns the index of the first
 element `predicate` returns truthy for, instead of the element itself.
@@ -508,15 +497,6 @@ If an object is provided for `predicate` the created "_.matches" style
 callback returns `true` for elements that have the properties of the given
 object, else `false`.
 
-#### Arguments
-1. `array` *(Array)*: The array to search.
-2. `[predicate=_.identity]` *(Function|Object|string)*: The function invoked per iteration. If a property name or object is provided it is used to create a "_.property" or "_.matches" style callback respectively.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `predicate`.
-
-#### Returns
-*(number)*:  Returns the index of the found element, else `-1`.
-
-#### Example
 ```js
 var users = [
   { 'user': 'barney',  'age': 36, 'active': false },
@@ -541,8 +521,7 @@ _.findIndex(users, 'active');
 
 <!-- div -->
 
-### <a id="_findlastindexarray-predicate_identity-thisarg"></a>`_.findLastIndex(array, [predicate=_.identity], [thisArg])`
-<a href="#_findlastindexarray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4440 "View in source") [&#x24C9;][1]
+### `_.findLastIndex(array, [predicate=_.identity], [thisArg])`
 
 This method is like `_.findIndex` except that it iterates over elements
 of `collection` from right to left.
@@ -556,15 +535,6 @@ If an object is provided for `predicate` the created "_.matches" style
 callback returns `true` for elements that have the properties of the given
 object, else `false`.
 
-#### Arguments
-1. `array` *(Array)*: The array to search.
-2. `[predicate=_.identity]` *(Function|Object|string)*: The function invoked per iteration. If a property name or object is provided it is used to create a "_.property" or "_.matches" style callback respectively.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `predicate`.
-
-#### Returns
-*(number)*:  Returns the index of the found element, else `-1`.
-
-#### Example
 ```js
 var users = [
   { 'user': 'barney',  'age': 36, 'active': true },
@@ -589,18 +559,10 @@ _.findLastIndex(users, 'active');
 
 <!-- div -->
 
-### <a id="_firstarray"></a>`_.first(array)`
-<a href="#_firstarray">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4468 "View in source") [&#x24C9;][1]
+### `_.first(array)`
 
 Gets the first element of `array`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-
-#### Returns
-*(&#42;)*:  Returns the first element of `array`.
-
-#### Example
 ```js
 _.first([1, 2, 3]);
 // => 1
@@ -614,20 +576,11 @@ _.first([]);
 
 <!-- div -->
 
-### <a id="_flattenarray-isdeep"></a>`_.flatten(array, [isDeep])`
-<a href="#_flattenarray-isdeep">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4492 "View in source") [&#x24C9;][1]
+### `_.flatten(array, [isDeep])`
 
 Flattens a nested array. If `isDeep` is `true` the array is recursively
 flattened, otherwise it is only flattened a single level.
 
-#### Arguments
-1. `array` *(Array)*: The array to flatten.
-2. `[isDeep]` *(boolean)*: Specify a deep flatten.
-
-#### Returns
-*(Array)*:  Returns the new flattened array.
-
-#### Example
 ```js
 _.flatten([1, [2], [3, [[4]]]]);
 // => [1, 2, 3, [[4]]];
@@ -642,18 +595,10 @@ _.flatten([1, [2], [3, [[4]]]], true);
 
 <!-- div -->
 
-### <a id="_flattendeeparray"></a>`_.flattenDeep(array)`
-<a href="#_flattendeeparray">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4513 "View in source") [&#x24C9;][1]
+### `_.flattenDeep(array)`
 
 Recursively flattens a nested array.
 
-#### Arguments
-1. `array` *(Array)*: The array to recursively flatten.
-
-#### Returns
-*(Array)*:  Returns the new flattened array.
-
-#### Example
 ```js
 _.flattenDeep([1, [2], [3, [[4]]]]);
 // => [1, 2, 3, 4];
@@ -664,8 +609,7 @@ _.flattenDeep([1, [2], [3, [[4]]]]);
 
 <!-- div -->
 
-### <a id="_indexofarray-value-fromindex0"></a>`_.indexOf(array, value, [fromIndex=0])`
-<a href="#_indexofarray-value-fromindex0">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4550 "View in source") [&#x24C9;][1]
+### `_.indexOf(array, value, [fromIndex=0])`
 
 Gets the index at which the first occurrence of `value` is found in `array`
 using `SameValueZero` for equality comparisons. If `fromIndex` is negative,
@@ -678,15 +622,6 @@ e.g. `===`, except that `NaN` matches `NaN`. See the
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
 for more details.
 
-#### Arguments
-1. `array` *(Array)*: The array to search.
-2. `value` *(&#42;)*: The value to search for.
-3. `[fromIndex=0]` *(boolean|number)*: The index to search from or `true` to perform a binary search on a sorted array.
-
-#### Returns
-*(number)*:  Returns the index of the matched value, else `-1`.
-
-#### Example
 ```js
 _.indexOf([1, 2, 3, 1, 2, 3], 2);
 // => 1
@@ -705,18 +640,10 @@ _.indexOf([4, 4, 5, 5, 6, 6], 5, true);
 
 <!-- div -->
 
-### <a id="_initialarray"></a>`_.initial(array)`
-<a href="#_initialarray">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4579 "View in source") [&#x24C9;][1]
+### `_.initial(array)`
 
 Gets all but the last element of `array`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.initial([1, 2, 3]);
 // => [1, 2]
@@ -727,8 +654,7 @@ _.initial([1, 2, 3]);
 
 <!-- div -->
 
-### <a id="_intersectionarrays"></a>`_.intersection([arrays])`
-<a href="#_intersectionarrays">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4602 "View in source") [&#x24C9;][1]
+### `_.intersection([arrays])`
 
 Creates an array of unique values in all provided arrays using `SameValueZero`
 for equality comparisons.
@@ -739,13 +665,6 @@ e.g. `===`, except that `NaN` matches `NaN`. See the
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
 for more details.
 
-#### Arguments
-1. `[arrays]` *(...Array)*: The arrays to inspect.
-
-#### Returns
-*(Array)*:  Returns the new array of shared values.
-
-#### Example
 ```js
 _.intersection([1, 2, 3], [5, 2, 1, 4], [2, 1]);
 // => [1, 2]
@@ -756,18 +675,10 @@ _.intersection([1, 2, 3], [5, 2, 1, 4], [2, 1]);
 
 <!-- div -->
 
-### <a id="_lastarray"></a>`_.last(array)`
-<a href="#_lastarray">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4657 "View in source") [&#x24C9;][1]
+### `_.last(array)`
 
 Gets the last element of `array`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-
-#### Returns
-*(&#42;)*:  Returns the last element of `array`.
-
-#### Example
 ```js
 _.last([1, 2, 3]);
 // => 3
@@ -778,21 +689,11 @@ _.last([1, 2, 3]);
 
 <!-- div -->
 
-### <a id="_lastindexofarray-value"></a>`_.lastIndexOf(array, value)`
-<a href="#_lastindexofarray-value">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4687 "View in source") [&#x24C9;][1]
+### `_.lastIndexOf(array, value)`
 
 This method is like `_.indexOf` except that it iterates over elements of
 `array` from right to left.
 
-#### Arguments
-1. `array` *(Array)*: The array to search.
-2. `value` *(&#42;)*: The value to search for.
-3. `[fromIndex=array.length-1]` *(boolean|number)*: The index to search from or `true` to perform a binary search on a sorted array.
-
-#### Returns
-*(number)*:  Returns the index of the matched value, else `-1`.
-
-#### Example
 ```js
 _.lastIndexOf([1, 2, 3, 1, 2, 3], 2);
 // => 4
@@ -811,8 +712,7 @@ _.lastIndexOf([4, 4, 5, 5, 6, 6], 5, true);
 
 <!-- div -->
 
-### <a id="_pullarray-values"></a>`_.pull(array, [values])`
-<a href="#_pullarray-values">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4734 "View in source") [&#x24C9;][1]
+### `_.pull(array, [values])`
 
 Removes all provided values from `array` using `SameValueZero` for equality
 comparisons.
@@ -826,14 +726,6 @@ comparisons.
 except that `NaN` matches `NaN`. See the [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
 for more details.
 
-#### Arguments
-1. `array` *(Array)*: The array to modify.
-2. `[values]` *(...&#42;)*: The values to remove.
-
-#### Returns
-*(Array)*:  Returns `array`.
-
-#### Example
 ```js
 var array = [1, 2, 3, 1, 2, 3];
 _.pull(array, 2, 3);
@@ -846,8 +738,7 @@ console.log(array);
 
 <!-- div -->
 
-### <a id="_pullatarray-indexes"></a>`_.pullAt(array, [indexes])`
-<a href="#_pullatarray-indexes">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4779 "View in source") [&#x24C9;][1]
+### `_.pullAt(array, [indexes])`
 
 Removes elements from `array` corresponding to the given indexes and returns
 an array of the removed elements. Indexes may be specified as an array of
@@ -856,14 +747,6 @@ indexes or as individual arguments.
 <br>
 **Note:** Unlike `_.at`, this method mutates `array`.
 
-#### Arguments
-1. `array` *(Array)*: The array to modify.
-2. `[indexes]` *(...(number|number&#91;&#93;)*: The indexes of elements to remove, specified as individual indexes or arrays of indexes.
-
-#### Returns
-*(Array)*:  Returns the new array of removed elements.
-
-#### Example
 ```js
 var array = [5, 10, 15, 20];
 var evens = _.pullAt(array, [1, 3]);
@@ -880,8 +763,7 @@ console.log(evens);
 
 <!-- div -->
 
-### <a id="_removearray-predicate_identity-thisarg"></a>`_.remove(array, [predicate=_.identity], [thisArg])`
-<a href="#_removearray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4817 "View in source") [&#x24C9;][1]
+### `_.remove(array, [predicate=_.identity], [thisArg])`
 
 Removes all elements from `array` that `predicate` returns truthy for
 and returns an array of the removed elements. The predicate is bound to
@@ -899,15 +781,6 @@ object, else `false`.
 <br>
 **Note:** Unlike `_.filter`, this method mutates `array`.
 
-#### Arguments
-1. `array` *(Array)*: The array to modify.
-2. `[predicate=_.identity]` *(Function|Object|string)*: The function invoked per iteration. If a property name or object is provided it is used to create a "_.property" or "_.matches" style callback respectively.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `predicate`.
-
-#### Returns
-*(Array)*:  Returns the new array of removed elements.
-
-#### Example
 ```js
 var array = [1, 2, 3, 4];
 var evens = _.remove(array, function(n) { return n % 2 == 0; });
@@ -924,18 +797,10 @@ console.log(evens);
 
 <!-- div -->
 
-### <a id="_restarray"></a>`_.rest(array)`
-<a href="#_restarray">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4848 "View in source") [&#x24C9;][1]
+### `_.rest(array)`
 
 Gets all but the first element of `array`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.rest([1, 2, 3]);
 // => [2, 3]
@@ -946,8 +811,7 @@ _.rest([1, 2, 3]);
 
 <!-- div -->
 
-### <a id="_slicearray-start0"></a>`_.slice(array, [start=0])`
-<a href="#_slicearray-start0">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4866 "View in source") [&#x24C9;][1]
+### `_.slice(array, [start=0])`
 
 Creates a slice of `array` from `start` up to, but not including, `end`.
 <br>
@@ -955,22 +819,13 @@ Creates a slice of `array` from `start` up to, but not including, `end`.
 **Note:** This function is used instead of `Array#slice` to support node
 lists in IE < 9 and to ensure dense arrays are returned.
 
-#### Arguments
-1. `array` *(Array)*: The array to slice.
-2. `[start=0]` *(number)*: The start position.
-3. `[end=array.length]` *(number)*: The end position.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
 * * *
 
 <!-- /div -->
 
 <!-- div -->
 
-### <a id="_sortedindexarray-value-iteratee_identity-thisarg"></a>`_.sortedIndex(array, value, [iteratee=_.identity], [thisArg])`
-<a href="#_sortedindexarray-value-iteratee_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4923 "View in source") [&#x24C9;][1]
+### `_.sortedIndex(array, value, [iteratee=_.identity], [thisArg])`
 
 Uses a binary search to determine the lowest index at which `value` should
 be inserted into `array` in order to maintain its sort order. If an iteratee
@@ -987,17 +842,6 @@ If an object is provided for `predicate` the created "_.matches" style
 callback returns `true` for elements that have the properties of the given
 object, else `false`.
 
-#### Arguments
-1. `array` *(Array)*: The sorted array to inspect.
-2. `value` *(&#42;)*: The value to evaluate.
-3. `[iteratee=_.identity]` *(Function|Object|string)*: The function invoked per iteration. If a property name or object is provided it is used to create a "_.property" or "_.matches" style callback respectively.
-4. `[thisArg]` *(&#42;)*: The `this` binding of `iteratee`.
-
-#### Returns
-*(number)*:  Returns the index at which `value` should be inserted
-into `array`.
-
-#### Example
 ```js
 _.sortedIndex([30, 50], 40);
 // => 1
@@ -1023,24 +867,12 @@ _.sortedIndex([{ 'x': 30 }, { 'x': 50 }], { 'x': 40 }, 'x');
 
 <!-- div -->
 
-### <a id="_sortedlastindexarray-value-iteratee_identity-thisarg"></a>`_.sortedLastIndex(array, value, [iteratee=_.identity], [thisArg])`
-<a href="#_sortedlastindexarray-value-iteratee_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4951 "View in source") [&#x24C9;][1]
+### `_.sortedLastIndex(array, value, [iteratee=_.identity], [thisArg])`
 
 This method is like `_.sortedIndex` except that it returns the highest
 index at which `value` should be inserted into `array` in order to
 maintain its sort order.
 
-#### Arguments
-1. `array` *(Array)*: The sorted array to inspect.
-2. `value` *(&#42;)*: The value to evaluate.
-3. `[iteratee=_.identity]` *(Function|Object|string)*: The function invoked per iteration. If a property name or object is provided it is used to create a "_.property" or "_.matches" style callback respectively.
-4. `[thisArg]` *(&#42;)*: The `this` binding of `iteratee`.
-
-#### Returns
-*(number)*:  Returns the index at which `value` should be inserted
-into `array`.
-
-#### Example
 ```js
 _.sortedLastIndex([4, 4, 5, 5, 6, 6], 5);
 // => 4
@@ -1051,19 +883,10 @@ _.sortedLastIndex([4, 4, 5, 5, 6, 6], 5);
 
 <!-- div -->
 
-### <a id="_takearray-n1"></a>`_.take(array, [n=1])`
-<a href="#_takearray-n1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4983 "View in source") [&#x24C9;][1]
+### `_.take(array, [n=1])`
 
 Creates a slice of `array` with `n` elements taken from the beginning.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[n=1]` *(number)*: The number of elements to take.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.take([1, 2, 3]);
 // => [1]
@@ -1083,19 +906,10 @@ _.take([1, 2, 3], 0);
 
 <!-- div -->
 
-### <a id="_takerightarray-n1"></a>`_.takeRight(array, [n=1])`
-<a href="#_takerightarray-n1">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5019 "View in source") [&#x24C9;][1]
+### `_.takeRight(array, [n=1])`
 
 Creates a slice of `array` with `n` elements taken from the end.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[n=1]` *(number)*: The number of elements to take.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.takeRight([1, 2, 3]);
 // => [3]
@@ -1115,8 +929,7 @@ _.takeRight([1, 2, 3], 0);
 
 <!-- div -->
 
-### <a id="_takerightwhilearray-predicate_identity-thisarg"></a>`_.takeRightWhile(array, [predicate=_.identity], [thisArg])`
-<a href="#_takerightwhilearray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5071 "View in source") [&#x24C9;][1]
+### `_.takeRightWhile(array, [predicate=_.identity], [thisArg])`
 
 Creates a slice of `array` with elements taken from the end. Elements are
 taken until `predicate` returns falsey. The predicate is bound to `thisArg`
@@ -1131,15 +944,6 @@ If an object is provided for `predicate` the created "_.matches" style
 callback returns `true` for elements that have the properties of the given
 object, else `false`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[predicate=_.identity]` *(Function|Object|string)*: The function invoked per element.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `predicate`.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.takeRightWhile([1, 2, 3], function(n) { return n > 1; });
 // => [2, 3]
@@ -1164,8 +968,7 @@ _.pluck(_.takeRightWhile(users, { 'status': 'away' }), 'user');
 
 <!-- div -->
 
-### <a id="_takewhilearray-predicate_identity-thisarg"></a>`_.takeWhile(array, [predicate=_.identity], [thisArg])`
-<a href="#_takewhilearray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5121 "View in source") [&#x24C9;][1]
+### `_.takeWhile(array, [predicate=_.identity], [thisArg])`
 
 Creates a slice of `array` with elements taken from the beginning. Elements
 are taken until `predicate` returns falsey. The predicate is bound to
@@ -1180,15 +983,6 @@ If an object is provided for `predicate` the created "_.matches" style
 callback returns `true` for elements that have the properties of the given
 object, else `false`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[predicate=_.identity]` *(Function|Object|string)*: The function invoked per element.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `predicate`.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.takeWhile([1, 2, 3], function(n) { return n < 3; });
 // => [1, 2]
@@ -1213,8 +1007,7 @@ _.pluck(_.takeWhile(users, { 'status': 'busy' }), 'user');
 
 <!-- div -->
 
-### <a id="_unionarrays"></a>`_.union([arrays])`
-<a href="#_unionarrays">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5151 "View in source") [&#x24C9;][1]
+### `_.union([arrays])`
 
 Creates an array of unique values, in order, of the provided arrays using
 `SameValueZero` for equality comparisons.
@@ -1225,13 +1018,6 @@ e.g. `===`, except that `NaN` matches `NaN`. See the
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
 for more details.
 
-#### Arguments
-1. `[arrays]` *(...Array)*: The arrays to inspect.
-
-#### Returns
-*(Array)*:  Returns the new array of combined values.
-
-#### Example
 ```js
 _.union([1, 2, 3], [5, 2, 1, 4], [2, 1]);
 // => [1, 2, 3, 5, 4]
@@ -1242,8 +1028,7 @@ _.union([1, 2, 3], [5, 2, 1, 4], [2, 1]);
 
 <!-- div -->
 
-### <a id="_uniqarray-issorted-iteratee-thisarg"></a>`_.uniq(array, [isSorted], [iteratee], [thisArg])`
-<a href="#_uniqarray-issorted-iteratee-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L5203 "View in source") [&#x24C9;][1]
+### `_.uniq(array, [isSorted], [iteratee], [thisArg])`
 
 Creates a duplicate-value-free version of an array using `SameValueZero`
 for equality comparisons. Providing `true` for `isSorted` performs a faster
@@ -1267,16 +1052,6 @@ e.g. `===`, except that `NaN` matches `NaN`. See the
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
 for more details.
 
-#### Arguments
-1. `array` *(Array)*: The array to inspect.
-2. `[isSorted]` *(boolean)*: Specify the array is sorted.
-3. `[iteratee]` *(Function|Object|string)*: The function invoked per iteration. If a property name or object is provided it is used to create a "_.property" or "_.matches" style callback respectively.
-4. `[thisArg]` *(&#42;)*: The `this` binding of `iteratee`.
-
-#### Returns
-*(Array)*:  Returns the new duplicate-value-free array.
-
-#### Example
 ```js
 _.uniq([1, 2, 1]);
 // => [1, 2]
