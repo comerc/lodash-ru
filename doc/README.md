@@ -405,8 +405,7 @@ _.dropRight([1, 2, 3], 0);
 
 <!-- div -->
 
-### <a id="_droprightwhilearray-predicate_identity-thisarg"></a>`_.dropRightWhile(array, [predicate=_.identity], [thisArg])`
-<a href="#_droprightwhilearray-predicate_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L4288 "View in source") [&#x24C9;][1]
+### <a id="_droprightwhilearray-predicate_identity-thisarg">`_.dropRightWhile(array, [predicate=_.identity], [thisArg])`</a>
 
 Creates a slice of `array` excluding elements dropped from the end.
 Elements are dropped until `predicate` returns falsey. The predicate is
@@ -421,15 +420,6 @@ If an object is provided for `predicate` the created "_.matches" style
 callback returns `true` for elements that have the properties of the given
 object, else `false`.
 
-#### Arguments
-1. `array` *(Array)*: The array to query.
-2. `[predicate=_.identity]` *(Function|Object|string)*: The function invoked per element.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `predicate`.
-
-#### Returns
-*(Array)*:  Returns the slice of `array`.
-
-#### Example
 ```js
 _.dropRightWhile([1, 2, 3], function(n) { return n > 1; });
 // => [1]
