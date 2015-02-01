@@ -561,7 +561,7 @@ _.findLastIndex(users, 'active');
 
 ### `_.first(array)`
 
-Gets the first element of `array`.
+Вернет первый элемент массива `array`.
 
 ```js
 _.first([1, 2, 3]);
