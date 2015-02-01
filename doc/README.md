@@ -677,7 +677,7 @@ _.intersection([1, 2, 3], [5, 2, 1, 4], [2, 1]);
 
 ### `_.last(array)`
 
-Gets the last element of `array`.
+Вернёт последний элемент массива `array`.
 
 ```js
 _.last([1, 2, 3]);
@@ -799,7 +799,7 @@ console.log(evens);
 
 ### `_.rest(array)`
 
-Gets all but the first element of `array`.
+Вернёт все, кроме первого элемента массива `array`.
 
 ```js
 _.rest([1, 2, 3]);
