@@ -642,7 +642,7 @@ _.indexOf([4, 4, 5, 5, 6, 6], 5, true);
 
 ### `_.initial(array)`
 
-Gets all but the last element of `array`.
+Вернёт все, кроме последнего элемента массива  `array`.
 
 ```js
 _.initial([1, 2, 3]);
