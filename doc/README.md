@@ -344,10 +344,9 @@ Creates an array excluding all values of the provided arrays using
 `SameValueZero` for equality comparisons.
 <br>
 <br>
-**Note:** `SameValueZero` comparisons are like strict equality comparisons,
-e.g. `===`, except that `NaN` matches `NaN`. See the
+**Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+для более подробной информации.
 
 ```js
 _.difference([1, 2, 3], [5, 2, 10]);
