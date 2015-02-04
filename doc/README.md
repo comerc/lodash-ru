@@ -717,7 +717,7 @@ comparisons.
 <br>
 **Замечания:**
 <br>
-* Unlike `_.without`, this method mutates `array`.
+* В отличии от `_.without`, этот метод мутирует `array`.
 <br>
 * `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
