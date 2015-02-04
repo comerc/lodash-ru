@@ -616,10 +616,9 @@ it is used as the offset from the end of `array`. If `array` is sorted
 providing `true` for `fromIndex` performs a faster binary search.
 <br>
 <br>
-**Note:** `SameValueZero` comparisons are like strict equality comparisons,
-e.g. `===`, except that `NaN` matches `NaN`. See the
+**Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+для более подробной информации.
 
 ```js
 _.indexOf([1, 2, 3, 1, 2, 3], 2);
@@ -659,10 +658,9 @@ Creates an array of unique values in all provided arrays using `SameValueZero`
 for equality comparisons.
 <br>
 <br>
-**Note:** `SameValueZero` comparisons are like strict equality comparisons,
-e.g. `===`, except that `NaN` matches `NaN`. See the
+**Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+для более подробной информации.
 
 ```js
 _.intersection([1, 2, 3], [5, 2, 1, 4], [2, 1]);
@@ -717,13 +715,13 @@ Removes all provided values from `array` using `SameValueZero` for equality
 comparisons.
 <br>
 <br>
-**Notes:**
+**Замечания:**
 <br>
 * Unlike `_.without`, this method mutates `array`.
 <br>
-* `SameValueZero` comparisons are like strict equality comparisons, e.g. `===`,
-except that `NaN` matches `NaN`. See the [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+* `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
+[ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
+для более подробной информации.
 
 ```js
 var array = [1, 2, 3, 1, 2, 3];
@@ -1012,10 +1010,9 @@ Creates an array of unique values, in order, of the provided arrays using
 `SameValueZero` for equality comparisons.
 <br>
 <br>
-**Note:** `SameValueZero` comparisons are like strict equality comparisons,
-e.g. `===`, except that `NaN` matches `NaN`. See the
+**Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+для более подробной информации.
 
 ```js
 _.union([1, 2, 3], [5, 2, 1, 4], [2, 1]);
@@ -1046,10 +1043,9 @@ callback returns `true` for elements that have the properties of the given
 object, else `false`.
 <br>
 <br>
-**Note:** `SameValueZero` comparisons are like strict equality comparisons,
-e.g. `===`, except that `NaN` matches `NaN`. See the
+**Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+для более подробной информации.
 
 ```js
 _.uniq([1, 2, 1]);
@@ -1098,10 +1094,9 @@ Creates an array excluding all provided values using `SameValueZero` for
 equality comparisons.
 <br>
 <br>
-**Note:** `SameValueZero` comparisons are like strict equality comparisons,
-e.g. `===`, except that `NaN` matches `NaN`. See the
+**Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+для более подробной информации.
 
 ```js
 _.without([1, 2, 1, 0, 3, 1, 4], 0, 1);
@@ -1849,10 +1844,9 @@ comparisons. If `fromIndex` is negative, it is used as the offset from
 the end of `collection`.
 <br>
 <br>
-**Note:** `SameValueZero` comparisons are like strict equality comparisons,
-e.g. `===`, except that `NaN` matches `NaN`. See the
+**Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
 [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-samevaluezero)
-for more details.
+для более подробной информации.
 
 #### Arguments
 1. `collection` *(Array|Object|string)*: The collection to search.
