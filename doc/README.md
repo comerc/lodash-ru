@@ -340,8 +340,7 @@ _.compact([0, 1, false, 2, '', 3]);
 
 ### `_.difference(array, [values])`
 
-Creates an array excluding all values of the provided arrays using
-`SameValueZero` for equality comparisons.
+Вернёт копию массива `array`, из которой будут удалены все значения `values`, используя `SameValueZero` для сравнения равенства.
 <br>
 <br>
 **Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
@@ -577,8 +576,7 @@ _.first([]);
 
 ### `_.flatten(array, [isDeep])`
 
-Flattens a nested array. If `isDeep` is `true` the array is recursively
-flattened, otherwise it is only flattened a single level.
+Если массив `array` обладает уровнями вложенности, приведёт его к элементарному виду (вложенность может быть любой глубины, если `isDeep` установлен в `true`).
 
 ```js
 _.flatten([1, [2], [3, [[4]]]]);
@@ -596,7 +594,7 @@ _.flatten([1, [2], [3, [[4]]]], true);
 
 ### `_.flattenDeep(array)`
 
-Recursively flattens a nested array.
+Если массив `array` обладает уровнями вложенности, приведёт его к элементарному виду (вложенность может быть любой глубины).
 
 ```js
 _.flattenDeep([1, [2], [3, [[4]]]]);
@@ -654,8 +652,7 @@ _.initial([1, 2, 3]);
 
 ### `_.intersection([arrays])`
 
-Creates an array of unique values in all provided arrays using `SameValueZero`
-for equality comparisons.
+Вернёт массив из элементов, встречающихся в каждом из переданных массивов `arrays`, используя `SameValueZero` для сравнения равенства.
 <br>
 <br>
 **Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
@@ -711,8 +708,7 @@ _.lastIndexOf([4, 4, 5, 5, 6, 6], 5, true);
 
 ### `_.pull(array, [values])`
 
-Removes all provided values from `array` using `SameValueZero` for equality
-comparisons.
+Удалит все значения `values` из массива `array`, используя `SameValueZero` для сравнения равенства.
 <br>
 <br>
 **Замечания:**
@@ -1006,8 +1002,7 @@ _.pluck(_.takeWhile(users, { 'status': 'busy' }), 'user');
 
 ### `_.union([arrays])`
 
-Creates an array of unique values, in order, of the provided arrays using
-`SameValueZero` for equality comparisons.
+Объединит уникальные элементы всех массивов `arrays`, используя SameValueZero для сравнения равенства. Порядок элементов будет определён порядком их появления в исходных массивах.
 <br>
 <br>
 **Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
@@ -1090,8 +1085,7 @@ _.unzip(zipped);
 
 ### `_.without(array, [values])`
 
-Creates an array excluding all provided values using `SameValueZero` for
-equality comparisons.
+Вернёт копию массива `array`, исключая все значения `values`, используя `SameValueZero` для сравнения равенства.
 <br>
 <br>
 **Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
