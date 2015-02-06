@@ -1123,9 +1123,7 @@ _.xor([1, 2, 5], [2, 3, 5], [3, 4, 5]);
 
 ### `_.zip([arrays])`
 
-Creates an array of grouped elements, the first of which contains the first
-elements of the given arrays, the second of which contains the second elements
-of the given arrays, and so on.
+Вернёт массив, каждым элементом которого будет массив, содержащий элементы всех переданных массивов `arrays`, расположенные на соответствующих позициях.
 
 ```js
 _.zip(['fred', 'barney'], [30, 40], [true, false]);
