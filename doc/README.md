@@ -306,9 +306,7 @@
 
 ### `_.chunk(array, [size=1])`
 
-Creates an array of elements split into groups the length of `size`.
-If `collection` can't be split evenly, the final chunk will be the remaining
-elements.
+Вернён массив элементов, разбитые на группы длиной `size`. При этом в последней группе будет остаток, если элементов не хватает. 
 
 ```js
 _.chunk(['a', 'b', 'c', 'd'], 2);
