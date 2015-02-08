@@ -683,8 +683,7 @@ _.last([1, 2, 3]);
 
 ### `_.lastIndexOf(array, value)`
 
-This method is like `_.indexOf` except that it iterates over elements of
-`array` from right to left.
+Этот метод подобен `_.indexOf`, но перебирает элементы массива `array` справа налево.
 
 ```js
 _.lastIndexOf([1, 2, 3, 1, 2, 3], 2);
