@@ -2596,7 +2596,7 @@ _.forEach(saves, function(type) {
 
 <!-- div -->
 
-### <a id="_aryfunc"></a>`_.ary(func)`
+### <a id="_aryfunc"></a>`_.ary(func, [n=func.length])`
 <a href="#_aryfunc">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L6682 "View in source") [&#x24C9;][1]
 
 Creates a function that accepts up to `n` arguments ignoring any
