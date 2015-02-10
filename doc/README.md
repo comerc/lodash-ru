@@ -4133,18 +4133,10 @@ _.isUndefined(null);
 
 <!-- div -->
 
-### <a id="_toarrayvalue"></a>`_.toArray(value)`
-<a href="#_toarrayvalue">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L8305 "View in source") [&#x24C9;][1]
+### `_.toArray(value)`
 
-Converts `value` to an array.
+Преобразует `value` в массив.
 
-#### Arguments
-1. `value` *(&#42;)*: The value to convert.
-
-#### Returns
-*(Array)*:  Returns the converted array.
-
-#### Example
 ```js
 (function() { return _.toArray(arguments).slice(1); })(1, 2, 3);
 // => [2, 3]
