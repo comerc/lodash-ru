@@ -2147,19 +2147,10 @@ _.map(_.partition(users, 'active'), function(array) { return _.pluck(array, 'use
 
 <!-- div -->
 
-### <a id="_pluckcollection-key"></a>`_.pluck(collection, key)`
-<a href="#_pluckcollection-key">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L6230 "View in source") [&#x24C9;][1]
+### `_.pluck(collection, key)`
 
-Gets the value of `key` from all elements in `collection`.
+Вернёт значение для `key` всех элементов в коллекции.
 
-#### Arguments
-1. `collection` *(Array|Object|string)*: The collection to iterate over.
-2. `key` *(string)*: The key of the property to pluck.
-
-#### Returns
-*(Array)*:  Returns the property values.
-
-#### Example
 ```js
 var users = [
   { 'user': 'barney', 'age': 36 },
