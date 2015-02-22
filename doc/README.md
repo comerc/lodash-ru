@@ -5934,16 +5934,10 @@ _('fred').vowels();
 
 <!-- div -->
 
-### <a id="_noconflict"></a>`_.noConflict()`
-<a href="#_noconflict">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L10342 "View in source") [&#x24C9;][1]
+### `_.noConflict()`
 
-Reverts the `_` variable to its previous value and returns a reference to
-the `lodash` function.
+Откатит `_` переменную к своему предыдущему значению и вернёт ссылку на функцию `lodash`.
 
-#### Returns
-*(Function)*:  Returns the `lodash` function.
-
-#### Example
 ```js
 var lodash = _.noConflict();
 ```
