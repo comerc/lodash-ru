@@ -6141,18 +6141,10 @@ _.times(3, function(n) { this.cast(n); }, mage);
 
 <!-- div -->
 
-### <a id="_uniqueidprefix"></a>`_.uniqueId([prefix])`
-<a href="#_uniqueidprefix">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L10534 "View in source") [&#x24C9;][1]
+### `_.uniqueId([prefix])`
 
-Generates a unique ID. If `prefix` is provided the ID is appended to it.
+Сгенерирует уникальный ID. Если был передан `prefix`, то сгенерированное имя будет добавлено к нему.
 
-#### Arguments
-1. `[prefix]` *(string)*: The value to prefix the ID with.
-
-#### Returns
-*(string)*:  Returns the unique ID.
-
-#### Example
 ```js
 _.uniqueId('contact_');
 // => 'contact_104'
