@@ -2963,21 +2963,10 @@ _.defer(function(text) { console.log(text); }, 'deferred');
 
 <!-- div -->
 
-### <a id="_delayfunc-wait-args"></a>`_.delay(func, wait, [args])`
-<a href="#_delayfunc-wait-args">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L7168 "View in source") [&#x24C9;][1]
+### `_.delay(func, wait, [args])`
 
-Invokes `func` after `wait` milliseconds. Any additional arguments are
-provided to `func` when it is invoked.
+Вызовет `func` по прошествии заданного (`wait`) времени в миллисекундах. Если были переданы дополнительные аргументы `args`, они будут переданы в `func` при её вызове. Вернёт id таймера. 
 
-#### Arguments
-1. `func` *(Function)*: The function to delay.
-2. `wait` *(number)*: The number of milliseconds to delay invocation.
-3. `[args]` *(...&#42;)*: The arguments to invoke the function with.
-
-#### Returns
-*(number)*:  Returns the timer id.
-
-#### Example
 ```js
 _.delay(function(text) { console.log(text); }, 1000, 'later');
 // => logs 'later' after one second
