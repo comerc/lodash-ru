@@ -5801,18 +5801,10 @@ _.filter(users, 'age__gt36');
 
 <!-- div -->
 
-### <a id="_constantvalue"></a>`_.constant(value)`
-<a href="#_constantvalue">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L10193 "View in source") [&#x24C9;][1]
+### `_.constant(value)`
 
-Creates a function that returns `value`.
+Вернёт функцию, которая возвращает `value`.
 
-#### Arguments
-1. `value` *(&#42;)*: The value to return from the new function.
-
-#### Returns
-*(Function)*:  Returns the new function.
-
-#### Example
 ```js
 var object = { 'user': 'fred' };
 var getter = _.constant(object);
@@ -5825,18 +5817,10 @@ getter() === object;
 
 <!-- div -->
 
-### <a id="_identityvalue"></a>`_.identity(value)`
-<a href="#_identityvalue">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L10213 "View in source") [&#x24C9;][1]
+### `_.identity(value)`
 
-This method returns the first argument provided to it.
+Вернёт значение, которое было передано в качестве аргумента.
 
-#### Arguments
-1. `value` *(&#42;)*: Any value.
-
-#### Returns
-*(&#42;)*:  Returns `value`.
-
-#### Example
 ```js
 var object = { 'user': 'fred' };
 _.identity(object) === object;
