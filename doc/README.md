@@ -5578,19 +5578,10 @@ _.map(['  foo  ', '  bar  '], _.trim);
 
 <!-- div -->
 
-### <a id="_trimleftstring-charswhitespace"></a>`_.trimLeft([string=''], [chars=whitespace])`
-<a href="#_trimleftstring-charswhitespace">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L9929 "View in source") [&#x24C9;][1]
+### `_.trimLeft([string=''], [chars=whitespace])`
 
-Removes leading whitespace or specified characters from `string`.
+Удалит ведущие пробелы или указанные символы из `string`.
 
-#### Arguments
-1. `[string='']` *(string)*: The string to trim.
-2. `[chars=whitespace]` *(string)*: The characters to trim.
-
-#### Returns
-*(string)*:  Returns the trimmed string.
-
-#### Example
 ```js
 _.trimLeft('  abc  ');
 // => 'abc  '
