@@ -606,10 +606,7 @@ _.flattenDeep([1, [2], [3, [[4]]]]);
 
 ### `_.indexOf(array, value, [fromIndex=0])`
 
-Gets the index at which the first occurrence of `value` is found in `array`
-using `SameValueZero` for equality comparisons. If `fromIndex` is negative,
-it is used as the offset from the end of `array`. If `array` is sorted
-providing `true` for `fromIndex` performs a faster binary search.
+Вернёт индекс первого вхождения `value` найденного в `array`, используя `SameValueZero` для сравнения равенства. Если `fromIndex` является отрицательным, то он используется в качестве смещения с конца `array`. Если `array` отсортирован указав `true` для `fromIndex`, выполняется более быстрый бинарный поиск.
 <br>
 <br>
 **Замечание:** `SameValueZero` сравнение подобно строгому сравнению, как `===`, за исключением что `NaN` соответствует `NaN`. Смотрите
