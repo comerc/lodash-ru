@@ -5592,19 +5592,10 @@ _.trimLeft('-_-abc-_-', '_-');
 
 <!-- div -->
 
-### <a id="_trimrightstring-charswhitespace"></a>`_.trimRight([string=''], [chars=whitespace])`
-<a href="#_trimrightstring-charswhitespace">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L9959 "View in source") [&#x24C9;][1]
+### `_.trimRight([string=''], [chars=whitespace])`
 
-Removes trailing whitespace or specified characters from `string`.
+Удалит конечные пробелы или указанные символы из `string`.
 
-#### Arguments
-1. `[string='']` *(string)*: The string to trim.
-2. `[chars=whitespace]` *(string)*: The characters to trim.
-
-#### Returns
-*(string)*:  Returns the trimmed string.
-
-#### Example
 ```js
 _.trimRight('  abc  ');
 // => '  abc'
