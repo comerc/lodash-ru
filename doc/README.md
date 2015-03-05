@@ -5916,18 +5916,10 @@ _.noop(object) === undefined;
 
 <!-- div -->
 
-### <a id="_propertykey"></a>`_.property(key)`
-<a href="#_propertykey">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L10386 "View in source") [&#x24C9;][1]
+### `_.property(key)`
 
-Creates a function which returns the property value of `key` on a given object.
+Создаст функцию, которая возвращает значение свойства `key` на данном объекте.
 
-#### Arguments
-1. `key` *(string)*: The key of the property to get.
-
-#### Returns
-*(Function)*:  Returns the new function.
-
-#### Example
 ```js
 var users = [
   { 'user': 'fred' },
@@ -5948,19 +5940,10 @@ _.pluck(_.sortBy(users, getName), 'user');
 
 <!-- div -->
 
-### <a id="_propertyofobject"></a>`_.propertyOf(object)`
-<a href="#_propertyofobject">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L10409 "View in source") [&#x24C9;][1]
+### `_.propertyOf(object)`
 
-The inverse of `_.property`; this method creates a function which returns
-the property value of a given key on `object`.
+Обратно `_.property`; этот метод создаст функцию, которая возвращает значение свойства данного ключа на `object`.
 
-#### Arguments
-1. `object` *(Object)*: The object to inspect.
-
-#### Returns
-*(Function)*:  Returns the new function.
-
-#### Example
 ```js
 var object = { 'user': 'fred', 'age': 40, 'active': true };
 _.map(['active', 'user'], _.propertyOf(object));
@@ -6133,10 +6116,9 @@ A reference to the `lodash` function.
 
 <!-- div -->
 
-### <a id="_version"></a>`_.VERSION`
-<a href="#_version">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L10794 "View in source") [&#x24C9;][1]
+### `_.VERSION`
 
-(string): The semantic version number.
+(string): Семантический номер версии.
 
 * * *
 
